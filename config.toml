@@ -7,6 +7,16 @@ level = 1
 enabled = false
 domain = "https://nebulaproxy.io"
 
+[db]
+name = "database" # Your database name
+username = "username" # The username of your DB (SQLITE just ignores this)
+password = "password" # The password to your DB (SQLITE ignores this)
+postgres = false # Enable to use postgres over sqlite (recommended for large prod instances)
+
+[postgres] # Set the "domain" to either and ip address or a actual domain 
+domain = "nebula.yumcity.net"
+port = 5432
+
 [server.server]
 port = 8080
 wisp = true
